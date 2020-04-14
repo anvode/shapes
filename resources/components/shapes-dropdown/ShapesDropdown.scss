@@ -1,0 +1,59 @@
+input {
+    background-clip: padding-box;
+    background-color: #fefefe;
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    color: #232323;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.47;
+    padding: 16px;
+    width: 100%;
+
+    &:focus {
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+        outline: rgba(0, 0, 0, 0);
+    }
+
+    &::-ms-expand {
+        // sass-lint:disable-line no-vendor-prefixes
+        background-color: transparent;
+        border: 0;
+    }
+
+    &::placeholder {
+        color: #666666;
+        font-size: var(--fs-xs);
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: #dddddd;
+    }
+}
+
+select {
+    @extend input;
+
+    appearance: none;
+    border-color: #e3e3e3;
+    vertical-align: middle;
+
+    &:focus::-ms-value {
+        // sass-lint:disable-line no-vendor-prefixes
+        background-color: #fefefe;
+        color: #232332;
+    }
+
+    &::-ms-expand {
+        // sass-lint:disable-line no-vendor-prefixes
+        display: none;
+    }
+}
+
+.shape-select {
+    &__label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}

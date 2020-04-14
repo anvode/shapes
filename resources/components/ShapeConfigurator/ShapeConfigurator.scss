@@ -1,0 +1,23 @@
+.shape-configurator {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+        'header header'
+        'main side';
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    padding: 1.5rem;
+
+    &__header {
+        grid-area: header;
+    }
+
+    &__main {
+        grid-area: main;
+    }
+
+    &__side {
+        grid-area: side;
+    }
+}

@@ -1,0 +1,41 @@
+.shapes {
+    height: 100%;
+}
+
+.shape-item {
+    align-items: center;
+    border: 1px solid #767676;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    &__circle {
+        border-radius: 50%;
+    }
+
+    &--active {
+        border-color: greenyellow;
+    }
+
+    &--disabled {
+        opacity: 0.2;
+    }
+}
+
+.shape {
+
+    &-default {
+        display: grid;
+        grid-gap: 3px;
+        justify-content: center;
+    }
+
+    &-cylinder {
+
+    }
+
+    &-cuboid {
+
+    }
+}

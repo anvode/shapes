@@ -1,0 +1,20 @@
+*.sass-cache
+dist/JavaScript/
+dist/Css/
+dist/*.html
+.cache
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+dist/
+public/
+src/
+node_modules/
+.vscode/
+.tmp/
+.idea/
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+browser-sync.json
