@@ -23,20 +23,6 @@
         "IE >= 11",
         "Edge > 16"
     ],
-    "lint-staged": {
-        "resources/**/*.js": [
-            "./node_modules/.bin/eslint  --fix",
-            "yarn run test"
-        ],
-        "resources/**/*.{scss,less,sass}": [
-            "./node_modules/.bin/stylelint  --fix"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
     "devDependencies": {
         "@babel/core": "7.2.2",
         "@babel/plugin-proposal-object-rest-spread": "7.3.2",
